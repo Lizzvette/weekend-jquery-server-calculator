@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hal 9000</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="vendors/JQuery.js"></script>
+        <script src="Public/client.js"></script>  <!-- ask of 8,9 error-->
+        <script src="Public/Server/server.js"></script>  
+        <!--<link href="css/style.css" rel="stylesheet">-->
+    </head>
+    <body>
+        <header><h1>Salary Calculation On Server</h1></header>
+    
+        <form id="formCalc">    
+           <!-- <input class="futureValueElement" type="number" placeholder="xyz id="zyz"/>
+            <input class="futureValueElement"  type="number" placeholder="Annual Salary" id="annualSalary"/-->
+           <input type="number" placeholder = "firstNumber" id="firstInput"/>
+           <!--skip input type could use: div class = formCalc ?? -->
+           
+           <button type ="button" id ='add'>+</button>
+           <button type ="button" id ='subtract'>-</button>
+           <button type ="button" id ='multiple'>*</button>
+           <button type ="button" id ='divide'>/</button> 
+
+           <input type="number" placeholder = "secondNumber" id="secondInput"/>
+            <input type="submit" value="="/> <!-- Submit</button> -->
+            <button type="button" onclick="ClearFields();">C</button><!---->
+        </form>
+<!-- will this work: https://www.codegrepper.com/code-examples/javascript/onclick+clear+input+field+javascript-->
+        <h2 id='theResults'></h2> 
+        <h2 Answer: ></h2>
+        <ul id="answer"></ul>
+        <!-- could do div ul id=''</ul> </div>-->
+    </body>
+</html>
